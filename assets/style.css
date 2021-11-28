@@ -31,7 +31,6 @@ body {
 .container {
     margin-left: 1rem;
     margin-right: 1rem;
-    box-shadow: 0 0 1rem 2px black;
     border-radius: 0 0 .5rem .5rem;
 }
 
@@ -120,9 +119,10 @@ main {
 
 .project-about-section .container {
     background-color: rgba(54, 202, 91, 0.3);
+    box-shadow: 0 0 .5rem 2px black;
 }
 
-h1.project-about-title {
+.title {
     font: 600 1.6rem var(--title-font);
     position: relative;
     width: max-content;
@@ -132,7 +132,7 @@ h1.project-about-title {
     word-break: break-all;
 }
 
-h1.project-about-title::before {
+.title::before {
     content: ' ';
     position: absolute;
     left: -2.5%;
@@ -150,20 +150,27 @@ p.project-text {
 }
 
 /* Front project */
+.projects-title {
+    padding-top: 1.5rem;
+}
+
 #projects {
-    margin-left: 2rem;
-    margin-right: 2rem;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 1.5rem;
+    gap: 1rem;
     flex-wrap: wrap;
 }
 
 #projects .front-project {
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
     border-radius: .5rem;
     text-decoration: none;
 
@@ -174,6 +181,11 @@ p.project-text {
     flex-direction: column;
     gap: 0;
 
+    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.7);
+}
+
+#projects .front-project:hover {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 #projects .front-project img {
@@ -188,7 +200,6 @@ p.project-text {
     justify-content: space-between;
     padding: 0 1rem;
 
-    border-radius: 0 0 .5rem .5rem;
     background-color: rgba(51, 172, 136, .7);
 }
 
