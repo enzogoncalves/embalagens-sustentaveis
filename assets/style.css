@@ -19,8 +19,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: sans-serif;
+    position: relative;
 }
 
 .section {
@@ -47,8 +52,32 @@ a.teacher-href {
     margin: .5rem 0;
 }
 
-/* ==== HEADER ====Q */
+/* toUpperPage */
+.toUpPage {
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 10;
+    
+    border-radius: 50%;
 
+    background-color: rgba(42, 196, 163, 1);
+    backdrop-filter: blur(12px);
+    -webkit-backgrop-filter: blur(12px);
+
+    box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.5);
+
+    padding: .3rem;
+    font-size: 2rem;
+
+    cursor: pointer;
+}
+
+.toUpPage:hover {
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+/* ==== HEADER ====Q */
 #header {
     height: var(--header-height);
     width: 100%;
@@ -181,7 +210,7 @@ p.project-text {
     flex-direction: column;
     gap: 0;
 
-    box-shadow: 3px 3px 1px 1px rgba(0, 0, 0, 0.7);
+    box-shadow: 2.5px 2.5px 1px 1px rgba(0, 0, 0, 0.7);
 }
 
 #projects .front-project:hover {
@@ -230,3 +259,27 @@ p.project-text {
     text-shadow: 2px 2px 1px black;
 }
 
+/* ==== FOOTER ==== */
+#footer {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+
+    background-color: rgba(42, 196, 163, 0.5);
+    backdrop-filter: blur(12px);
+    -webkit-backgrop-filter: blur(12px);
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+.footer-title {
+    font: 400 1.25rem var(--title-font);
+}
+
+#footer a {
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: black;
+}
