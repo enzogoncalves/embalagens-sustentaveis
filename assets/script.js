@@ -9,13 +9,50 @@ function headerShadow() {
     }
 }
 
-// botão de voltar para o topo da página
+// mostrar botão de voltar ao topo da página ao descer a página
+function showBtnToUpPage() {
+    if (window.scrollY >= 300) {
+        btnUpPage.classList.add('toUpPage-show');
+    } else {
+        btnUpPage.classList.remove('toUpPage-show');
+    }
+}
+
+// faz o botão fazer a página voltar para o topo
 const btnUpPage = document.querySelector('.toUpPage');
 
 btnUpPage.addEventListener('click', function() {
     scrollTo(0, 0);
 });
 
+
+const btnOpenMenu = document.querySelector('.icon-menu');
+const btnCloseMenu = document.querySelector('.icon-close');
+const menu = document.querySelector('.menu');
+
+// ao clicar no botão de menu, abir o menu e mostrar o botão de fechá-lo
+btnOpenMenu.addEventListener('click', function() {
+    menu.classList.add('show');
+    btnCloseMenu.classList.add('btn-close-show');
+});
+
+// ao clicar no botão de fechar menu, fechar o menu e desaparecer o botão de fechá-lo
+btnCloseMenu.addEventListener('click', function() {
+    menu.classList.remove('show');
+    btnCloseMenu.classList.remove('btn-close-show');
+});
+
+const links = document.querySelectorAll('nav .menu ul li a');
+
+// Ao clicar nos li, fechar o menu e fazer desaparecer o botão de fechar
+for (const link of links) {
+    link.addEventListener('click', function() {
+        menu.classList.remove('show');
+        btnCloseMenu.classList.remove('btn-close-show');
+    });
+}
+
 window.addEventListener('scroll', function() {
     headerShadow();
+    showBtnToUpPage();
 });
