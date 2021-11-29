@@ -34,12 +34,14 @@ const menu = document.querySelector('.menu');
 btnOpenMenu.addEventListener('click', function() {
     menu.classList.add('show');
     btnCloseMenu.classList.add('btn-close-show');
+    header.classList.remove('background-blur');
 });
 
 // ao clicar no botão de fechar menu, fechar o menu e desaparecer o botão de fechá-lo
 btnCloseMenu.addEventListener('click', function() {
     menu.classList.remove('show');
     btnCloseMenu.classList.remove('btn-close-show');
+    header.classList.add('background-blur');
 });
 
 const links = document.querySelectorAll('nav .menu ul li a');
