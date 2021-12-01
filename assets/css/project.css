@@ -136,6 +136,8 @@ h1#project-preparation .icon-tools {
     width: 100%;
     max-width: 300px;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
 .consideracoes-finais .container {
