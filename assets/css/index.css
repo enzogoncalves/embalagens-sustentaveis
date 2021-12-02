@@ -4,34 +4,92 @@
     width: 100%;
     max-width: 500px;
     height: auto;
-    margin: .5rem 0;
+    margin: .5rem auto;
 }
 
-@media (min-width: 500px) {
-    #project-about-section .container .img-about {
-        max-width: 50%;
+.project-about {
+    margin: 1rem;
+    border: 3px solid white;
+    padding: 0 .5rem;
+}
+
+@media (min-width: 590px) {
+    .project-about{
+        overflow: hidden;
+        max-width: 800px;
     }
 
-    #project-about-section .container .img-about-01 {
+    .project-about .img-about-01 {
         float: left;
-        padding-right: .5rem;
+        width: 50%;
+        max-height: auto;
+        max-width: 350px;
+        padding-right: 1rem;
     }
 
-    #project-about-section .container .img-about-02 {
+    .project-about .img-about-02 {
         float: right;
-        padding-left: .5rem;
+        width: 50%;
+        max-height: auto;
+        max-width: 300px;
+        padding-left: 1rem;
     }
 }
 
-@media (min-width: 635px) {
-    #project-about-section .container .img-about {
-        max-width: 200px;
+@media (min-width: 800px) {
+    .logo { 
+        font-size: 1.75rem;
     }
-} 
 
-@media (min-width: 1170px) {
-    #project-about-section .container {
-        max-width: 1120px;
+    .icon-menu {
+        display: none;
+    }
+
+    #nav {
+        justify-content: space-around;
+    }
+
+    #nav .menu {
+        visibility: visible;
+        opacity: 1;
+        
+        background: none;
+        position: static;
+
+        width: auto;
+        height: auto;
+
+        background: none;
+        backdrop-filter: blur(0);
+        -webkit-backdrop-filter: blur(0);
+    }
+
+    #nav .menu ul {
+        visibility: visible;
+        list-style: none;
+
+        display: flex;
+        gap: 4rem;
+        flex-grow: 2;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        font: 500 1.25rem var(--text-font);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.719);
+    }
+}
+
+@media (min-width: 875px) {
+    .project-about {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 1050px) {
+    .project-about-section .container {
+        max-width: 1000px;
         margin: 0 auto;
     }
 }

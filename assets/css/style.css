@@ -26,6 +26,7 @@ html {
 body {
     font-family: sans-serif;
     position: relative; 
+    background-color: black;
 }
 
 .section {
@@ -41,6 +42,7 @@ body {
 /* TEXTS */
 a.teacher-href {
     word-break: break-all;
+    color: rgb(255, 116, 116);
 }
 
 /* toUpperPage */
@@ -55,7 +57,7 @@ a.teacher-href {
     
     border-radius: 50%;
 
-    background-color: rgb(49, 226, 188);
+    background-color: white;
 
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
 
@@ -65,10 +67,8 @@ a.teacher-href {
     cursor: pointer;
     
     transition-duration: .3s;
-}
 
-.toUpPage:hover {
-    background-color: rgb(30, 196, 160);
+    color: black;
 }
 
 body .toUpPage-show {
@@ -82,7 +82,7 @@ body .toUpPage-show {
     height: var(--header-height);
     width: 100%;
 
-    background-color: rgba(42, 196, 163, 0.5);
+    background-color: rgba(0, 0, 0, .6);
 
     position: fixed;
     top: 0;
@@ -203,7 +203,7 @@ body .toUpPage-show {
     height: 3px;
     background-color: white;
 
-    transition: width .3s;
+    transition: width .2s;
 }
 
 .menu ul li a:hover::before {
@@ -235,7 +235,7 @@ body .toUpPage-show {
 /* ==== MAIN ====*/
  
 main {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 1);
     margin-bottom: 1rem;
 }
 
@@ -244,9 +244,10 @@ main {
 }
 
 .project-about-section .container {
-    background-color: rgba(54, 202, 91, .2);
-    box-shadow: 0 0 .5rem 2px rgba(0, 0, 0, 0.7);
+    background-color: rgba(79, 17, 192, 0.171);
+    box-shadow: 0 0 .5rem 2px rgba(255, 255, 255, 0.1);
     border-radius: 0 0 .5rem .5rem;
+    padding-bottom: .01rem;
 }
 
 .title {
@@ -257,6 +258,7 @@ main {
     margin-bottom: 1rem;
     padding-top: 1rem;
     word-break: break-all;
+    color: white;
 }
 
 .title::before {
@@ -274,7 +276,7 @@ p.project-text {
     line-height: 1.3rem;
     text-indent: 1rem;
     padding: .5rem 1rem;
-    color: black;
+    color: white;
 }
 
 /* Front project */
@@ -334,7 +336,7 @@ p.project-text {
     bottom: 0;
     left: 0;
 
-    background-color: rgba(17, 238, 164, 0.4);
+    background-color: rgba(29, 177, 182, 0.623);
 }
 
 #projects .low div{
@@ -342,14 +344,14 @@ p.project-text {
     bottom: auto;
     left: auto;
 
-    background-color: rgba(13, 182, 117, 0.7);
+    background-color: rgba(32, 187, 192, 0.5);
 }
 
 
 .project-front-name {
     font: 500 1.5rem var(--title-font);
     color: white;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
     padding-top: .25rem;
 }
 
@@ -416,49 +418,4 @@ p.project-text {
     #nav {
         padding: 0 1.5rem;
     }   
-}
-
-
-@media (min-width: 800px) {
-    .logo { 
-        font-size: 1.75rem;
-    }
-
-    .icon-menu {
-        display: none;
-    }
-
-    #nav {
-        justify-content: space-around;
-    }
-
-    #nav .menu {
-        visibility: visible;
-        opacity: 1;
-        
-        background: none;
-        position: static;
-
-        width: auto;
-        height: auto;
-
-        background: rgba(0, 0, 0, 0);
-        backdrop-filter: blur(0);
-        -webkit-backdrop-filter: blur(0);
-    }
-
-    #nav .menu ul {
-        visibility: visible;
-        list-style: none;
-
-        display: flex;
-        gap: 4rem;
-        flex-grow: 2;
-    }
-
-    .menu ul li a {
-        text-decoration: none;
-        font: 500 1.25rem var(--text-font);
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.719);
-    }
 }

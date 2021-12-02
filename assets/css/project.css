@@ -15,21 +15,36 @@
     gap: 5rem;
 }
 
-.project-about-section .project-group-students ul {
+.project-about-section .project-group-students {
     margin: 1.5rem  1.5rem 2rem 1.5rem;
+}
+
+.project-about-section .project-group-students h3 {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.project-about-section .project-group-students ul {
     padding-left: .5rem;
     list-style: none;
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    border-left: 2px solid black;
+    border-left: 2px solid white;
+    color: white;
 }
 
 .project-about-section .project-group-students ul li .icon-person {
     margin-right: .3rem;
 }
 
-.project-about-section .project-image {
+.packing {
+    margin: 1rem;
+    padding: 1rem 1rem 0;
+    border: 3px solid white;
+}
+
+.project-about-section .packing-image {
     width: 100%;
     max-width: 400px;
     height: auto;
@@ -38,12 +53,17 @@
     margin: .5rem auto;
 }
 
-/* MATERIALS - PREPARATION*/
-#project-materials-section .container, #project-preparation-section .container {
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+.project-about-section p {
+    color: white;
 }
 
-.project-ul-materials-preparation {
+/* MATERIALS - PREPARATION*/
+#packing-materials-section .container, #packing-preparation-section .container {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    color: white; 
+}
+
+.packing-ul-materials-preparation {
     list-style: circle;
     padding: .5rem;
     padding-left: 1.5rem;
@@ -51,9 +71,10 @@
     flex-direction: column;
     gap: .5rem;
     font-weight: 600;
+    color: white;
 }
 
-.project-materials-preparation-name {
+.packing-name {
     font-size: 1.25rem;
     text-align: center;
     color: white;
@@ -63,14 +84,14 @@
     position: relative;
 }
 
-.project-materials-preparation-name::before {
+.packing-name::before {
     content: ' ';
     position: absolute;
     left: 0;
     bottom: -0.25rem;
     width: 100%;
     height: 2px;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 .packing-text {
@@ -78,17 +99,18 @@
     padding: .5rem;
 }
 
-.project-video {
+.packing-video {
     width: 100%;
     height: auto;
     min-height: 250px;
     max-width: 400px;
     display: block;
+    margin: 0 auto;
 }
 
 /* ==== MATERIALS ====*/
 
-#project-materials-section .container {
+#packing-materials-section .container {
     background-color: rgba(30, 151, 111, 0.3);
     padding: 1rem;
 
@@ -97,13 +119,13 @@
     gap: 1rem;
 }
 
-.project-materials {
+.packing-materials {
     border: 2px solid rgb(28, 175, 155);
     border-radius: .5rem;
     overflow: hidden;
 }
 
-.materials-project-image {
+.materials-packing-image {
     width: 100%;
     display: block;
     max-width: 300px;  
@@ -112,7 +134,7 @@
 
 /* ==== PREPARATION ====*/
 
-#project-preparation-section .container {
+#packing-preparation-section .container {
     background-color: rgba(32, 187, 192, 0.3);
     padding: 1rem;
 
@@ -121,18 +143,18 @@
     gap: 1rem;
 }
 
-h1#project-preparation .icon-tools {
-    color: black;
-    font-weight: 700;
+h1#packing-preparation .icon-tools {
+    color: white;
+    font-weight: 400;
 }
 
-.project-preparation {
+.packing-preparation {
     border: 2px solid rgb(16, 133, 201);
     border-radius: .5rem;
     overflow: hidden;
 }
 
-.preparation-project-image {
+.preparation-packing-image {
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -140,7 +162,99 @@ h1#project-preparation .icon-tools {
     margin: 0 auto;
 }
 
-.consideracoes-finais .container {
-    border: 2px solid black;
+#finals {
+    border: 2px solid white;
     border-radius: .5rem;
+    margin: 0 1.5rem;
+    padding: 1rem;
+    line-height: 1.3rem;;
+}
+
+#finals p {
+    color: white;
+}
+
+@media (min-width: 601px) {
+    #header #nav .menu.show ul li a {
+        font-size: 2.5rem;
+    }
+}
+
+@media (min-width: 510px) {
+    .project-about-section {
+        max-width: 510px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #packing-materials-section, #packing-preparation-section {
+        max-width: 510px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media (min-width: 900px) {
+    .logo {
+        padding-left: 1rem;
+        font-size: 1.5rem;
+        max-width: min-content;
+        margin-right: 2rem;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    #nav {
+        justify-content: space-around;
+    }
+
+    #nav .menu {
+        visibility: visible;
+        opacity: 1;
+        
+        background: none;
+        position: static;
+
+        background: none;
+        backdrop-filter: blur(0);
+        -webkit-backdrop-filter: blur(0);
+
+        height: auto;
+    }
+
+    #nav .menu ul {
+        width: 100%;
+
+        visibility: visible;
+        list-style: none;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-shrink: 155px;
+    }
+
+    #nav .menu ul li {
+        text-align: center;
+        border-left: 2px solid white;
+    }
+    
+    #nav .menu ul li:first-child {
+        border-left: none;
+        padding-right: 1rem;
+    }
+
+    .menu ul li a {
+        text-align: center;
+        text-decoration: none;
+        font: 500 1.25rem var(--text-font);
+    }
+}
+
+@media (min-width: 1055px) {
+    #nav .menu ul li a{
+        max-width: 155px;
+    }
 }
