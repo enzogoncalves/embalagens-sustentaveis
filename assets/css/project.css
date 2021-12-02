@@ -117,6 +117,10 @@
 }
 
 /* ==== MATERIALS ====*/
+h1#packing-materials .icon-material {
+    color: white;
+    font-weight: 400;
+}
 
 #packing-materials-section .container {
     background-color: rgba(30, 151, 111, 0.3);
