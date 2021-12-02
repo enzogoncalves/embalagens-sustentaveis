@@ -26,7 +26,6 @@ html {
 body {
     font-family: sans-serif;
     position: relative; 
-    background-color: black;
 }
 
 .section {
@@ -95,7 +94,7 @@ body .toUpPage-show {
 }
 
 .header-box-shadow {
-    box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.7) 
+    box-shadow: 0px 1px 7px rgba(255, 255, 255, 0.4) 
 }
 
 .logo {
@@ -235,8 +234,8 @@ body .toUpPage-show {
 /* ==== MAIN ====*/
  
 main {
-    background-color: rgba(0, 0, 0, 1);
-    margin-bottom: 1rem;
+    background-color: rgb(20, 20, 20);
+    padding-bottom: 2rem;
 }
 
 .project-about-section {
@@ -244,8 +243,8 @@ main {
 }
 
 .project-about-section .container {
-    background-color: rgba(79, 17, 192, 0.171);
-    box-shadow: 0 0 .5rem 2px rgba(255, 255, 255, 0.1);
+    background-color: rgba(79, 17, 192, 0.3);
+    box-shadow: 0 0 .5rem 2px rgba(255, 255, 255, 0.5);
     border-radius: 0 0 .5rem .5rem;
     padding-bottom: .01rem;
 }
@@ -363,9 +362,8 @@ p.project-text {
 
 /* ==== FOOTER ==== */
 #footer {
-    background-color: rgba(42, 196, 163, 0.5);
-    box-shadow: 0px 0px 5px 1px black;
-    margin-top: 2rem;
+    background-color: rgb(30, 133, 110);
+    box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.151);
     padding-bottom: .5rem;
 }
 
@@ -418,4 +416,12 @@ p.project-text {
     #nav {
         padding: 0 1.5rem;
     }   
+}
+
+@media (min-width: 800px) {
+    #footer div {
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
