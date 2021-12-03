@@ -13,7 +13,18 @@
     padding: 0 .5rem;
 }
 
+@media (min-width: 320px) {
+    #nav .logo {
+        max-width: 270px;
+        font-size: 1.25rem;
+    }
+}
+
 @media (min-width: 590px) {
+    #nav {
+        gap: 2rem;
+    }
+
     .project-about{
         overflow: hidden;
         max-width: 800px;
@@ -37,10 +48,6 @@
 }
 
 @media (min-width: 800px) {
-    .logo { 
-        font-size: 1.75rem;
-    }
-
     .icon-menu {
         display: none;
     }

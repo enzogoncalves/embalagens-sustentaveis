@@ -98,18 +98,18 @@ body .toUpPage-show {
 }
 
 .logo {
-    font: 400 1.3rem var(--logo-font);
+    font: 400 1.25rem var(--logo-font);
     line-height: 2rem;
     color: white;
     text-shadow: 2px 2px 2px black;
+    word-spacing: .5rem;
 }
 
 #nav {
     height: var(--header-height);
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 0 .5rem;
+    justify-content: space-around;
 }
 
 .icon-menu, .icon-close {
@@ -405,12 +405,6 @@ p.project-text {
     }
 }
 
-
-@media (min-width: 380px) {
-    .logo {
-        font-size: 1.5rem;
-    }
-}
 
 @media (min-width: 470px) {
     #nav {
