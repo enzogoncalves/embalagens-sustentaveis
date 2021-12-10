@@ -60,3 +60,12 @@ window.addEventListener('scroll', function() {
     headerShadow();
     showBtnToUpPage();
 });
+
+
+// alternative images text
+const projects = document.querySelectorAll('.front-project');
+
+for(const project of projects) {
+    const projectName = project.querySelector('.project-front-name').innerHTML.toLowerCase();
+    project.getElementsByTagName('img')[0].alt = "Projeto sobre " + projectName;
+}
