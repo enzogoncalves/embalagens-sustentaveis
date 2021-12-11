@@ -256,6 +256,7 @@ h1#packing-preparation .icon-tools {
     
         background-color: transparent;
         backdrop-filter: none;
+        -webkit-backdrop-filter: none;
     
         transition: none;
     }
