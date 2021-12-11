@@ -27,11 +27,11 @@ btnUpPage.addEventListener('click', function() {
 });
 
 
+// ao clicar no botão de menu, abir o menu e mostrar o botão de fechá-lo
 const btnOpenMenu = document.querySelector('.icon-menu');
 const btnCloseMenu = document.querySelector('.icon-close');
 const menu = document.querySelector('.menu');
 
-// ao clicar no botão de menu, abir o menu e mostrar o botão de fechá-lo
 btnOpenMenu.addEventListener('click', function() {
     menu.classList.add('show');
     btnCloseMenu.classList.add('btn-close-show');
@@ -47,9 +47,9 @@ btnCloseMenu.addEventListener('click', function() {
     header.classList.add('background-blur');
 });
 
+// Ao clicar nos li, fechar o menu e fazer desaparecer o botão de fechar
 const links = document.querySelectorAll('nav .menu ul li a');
 
-// Ao clicar nos li, fechar o menu e fazer desaparecer o botão de fechar
 for (const link of links) {
     link.addEventListener('click', function() {
         menu.classList.remove('show');
