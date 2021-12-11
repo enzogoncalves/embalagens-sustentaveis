@@ -11,8 +11,18 @@
     --header-height: 4.375rem;
 }
 
-.menu.show ul {
-    gap: 5rem;
+#nav {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav .show ul {
+    gap: 5.5rem;
+}
+
+#nav .show ul li a{
+    font: 700 1.5rem var(--title-font);
 }
 
 .project-about-section .project-group-students {
@@ -199,9 +209,116 @@ h1#packing-preparation .icon-tools {
     color: rgb(0, 128, 11);
 }
 
-@media (min-width: 320px) {
+/* HEADER */
+@media (min-width: 400px) {
+    #nav .show ul li a{
+        font: 700 2rem var(--title-font);
+    }
+}
+
+@media (min-width: 601px) and (max-width: 899px){
+    #nav {
+        justify-content: space-around;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
     #nav .logo {
-        max-width: 270px;
+        max-width: 500px;
+    }
+}
+
+@media (min-width: 700px) {
+    #nav .show ul li a{
+        font: 700 2.5rem var(--title-font);
+    }
+}
+
+@media (min-width: 900px) {
+    .icon-menu {
+        display: none;
+    }
+
+    .logo {
+        max-width: 260px;
+        margin-right: 1.9rem;
+    }
+
+    #nav .menu {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+
+        height: auto;
+        width: auto;
+    
+        position: static;
+    
+        background-color: transparent;
+        backdrop-filter: none;
+    
+        transition: none;
+    }
+
+    #nav {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        justify-content: space-around;
+    }
+
+    .menu ul {
+        gap: 2rem;
+        justify-content: space-between;
+        width: 100%;
+        flex-grow: 2;
+    }
+
+    .menu ul li {
+        max-width: 150px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu ul li:first-child {
+        padding-right: 1.5rem;
+    }
+
+    .menu ul li a {
+        padding: .25rem;
+        font: 400 1rem var(--title-font);
+        text-align: center;
+    }
+
+    .menu ul li a::before {
+        left: -2.5%v!important;
+        height: 2px;
+    }
+
+    .menu ul li a:hover::before {
+        width: 105%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .logo {
+        margin-right: 2.5rem;
+    }
+
+    #nav {
+        justify-content: space-around;
+    }
+
+    .menu ul {
+        justify-content: space-around;
+    }
+
+    .menu ul li {
+        max-width: 400px;
+    }
+
+    .menu ul li a {
         font-size: 1.25rem;
     }
 }
@@ -238,134 +355,13 @@ h1#packing-preparation .icon-tools {
 }
 
 @media (min-width: 601px) {
-    #header #nav .menu.show ul li a {
-        font-size: 2.5rem;
-    }
-
     #finals .container {
         max-width: 550px;
         margin: 0 auto;
     }
 }
 
-@media (min-width: 600px) and (max-width: 900px) {
-    #nav {
-        max-width: 750px;
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-}
-
-@media (min-width: 900px) {
-    #nav .logo {
-        font-size: 1.25rem;
-        min-width: 270px;
-        margin-right: 1rem;
-    }
-
-    .icon-menu {
-        display: none;
-    }
-
-    #nav {
-        /* justify-content: center; */
-        padding: 0 3rem;
-    }
-
-    #nav .menu {
-        visibility: visible;
-        opacity: 1;
-        
-        background: none;
-        position: static;
-
-        background: none;
-        backdrop-filter: blur(0);
-        -webkit-backdrop-filter: blur(0);
-
-        height: auto;
-    }
-    
-    #nav .menu ul {
-        width: 100%;
-        
-        visibility: visible;
-        list-style: none;
-        
-        display: flex;
-        align-items: center;
-        
-        justify-content: space-evenly;
-    }
-
-    #nav .menu ul li {
-        text-align: center;
-        border-left: 3px solid white;
-        position: relative;
-        max-width: 165px;
-    }
-    
-    #nav .menu ul li:first-child {
-        border: none;
-        padding-right: 1rem;
-    }
-
-    .menu ul li a {
-        text-align: center;
-        text-decoration: none;
-        font: 500 1.15rem var(--text-font);
-    }
-
-    .menu ul li a::before {
-        position: static;
-    }
-    
-    #nav .menu ul li::before {
-        content: '';
-        position: absolute;
-        bottom: -5%;
-        left: -3px;
-    
-        width: 0;
-        height: 3px;
-        background-color: white;
-    
-        transition: width .2s;
-    }
-
-    #nav .menu ul li:hover::before {
-        width: calc(100% + 6px);
-    }
-}
-
 @media (min-width: 1050px) {
-    #nav {
-        max-width: 1100px;
-        margin: 0 auto;
-    }
-
-    #nav .menu ul {
-        justify-content: space-around;
-    }
-
-    #nav .menu ul li {
-        border-left: none;
-        
-    }
-
-    #nav .menu ul li{
-        width: 150px;
-    }
-
-    #nav .menu ul li:first-child {
-        border: none;
-        padding-right: 0;
-        margin-right: 0;
-    }
-    #nav .menu ul li:first-child::before {
-        position: static;
-    }
-
     .packing-flex-box {
         display: flex;
         justify-content: center;

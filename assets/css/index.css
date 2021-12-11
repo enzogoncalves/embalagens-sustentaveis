@@ -1,5 +1,21 @@
 @charset "UTF-8";
 
+/* === HEADER === */
+#nav {
+    justify-content: space-around;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#nav .show ul {
+    gap: 10rem;
+}
+
+#nav .show ul li a{
+    font: 700 3.5rem var(--title-font);
+}
+
 .img-about {
     width: 100%;
     max-width: 500px;
@@ -91,18 +107,26 @@
     text-shadow: 2px 2px 1px black;
 }
 
-@media (min-width: 320px) {
-    #nav .logo {
-        max-width: 270px;
-        font-size: 1.25rem;
+/* Header */
+@media (max-width: 300px) {
+    #nav .show ul li a {
+        font: 700 1.5rem var(--title-font);
+    }
+}
+
+@media (min-width: 300px) and (max-width: 400px) {
+    #nav .show ul li a {
+        font: 700 2rem var(--title-font);
+    }
+}
+
+@media (min-width: 401px) and (max-width: 600px) {
+    #nav .show ul li a {
+        font: 700 2.5rem var(--title-font);
     }
 }
 
 @media (min-width: 590px) {
-    #nav {
-        gap: 2rem;
-    }
-
     .project-about{
         overflow: hidden;
         max-width: 800px;
@@ -125,43 +149,51 @@
     }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 700px) {
     .icon-menu {
         display: none;
+    }
+
+    .logo {
+        max-width: 260px;
+    }
+
+    #nav .menu {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+
+        height: auto;
+        width: auto;
+    
+        position: static;
+    
+        background-color: transparent;
+        backdrop-filter: none;
+    
+        transition: none;
     }
 
     #nav {
         justify-content: space-around;
     }
 
-    #nav .menu {
-        visibility: visible;
-        opacity: 1;
-        
-        background: none;
-        position: static;
-
-        width: auto;
-        height: auto;
-
-        background: none;
-        backdrop-filter: blur(0);
-        -webkit-backdrop-filter: blur(0);
-    }
-
-    #nav .menu ul {
-        visibility: visible;
-        list-style: none;
-
-        display: flex;
-        gap: 4rem;
-        flex-grow: 2;
+    .menu ul {
+        gap: 3rem;
     }
 
     .menu ul li a {
-        text-decoration: none;
-        font: 500 1.25rem var(--text-font);
-        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.719);
+        padding: .25rem;
+        font: 400 1.25rem var(--title-font);
+    }
+
+    .menu ul li a::before {
+        left: -2.5%v!important;
+        height: 2px;
+    }
+
+    .menu ul li a:hover::before {
+        width: 105%;
     }
 }
 
@@ -170,10 +202,16 @@
         margin-left: auto;
         margin-right: auto;
     }
+}
 
-    #nav {
-        max-width: 900px;
-        margin: 0 auto;
+@media (min-width: 1000px) {
+    #nav .logo {
+        max-width: 500px;
+        font-size: 1.5rem;
+    }
+
+    .menu ul li a {
+        font: 400 1.5rem var(--title-font);
     }
 }
 

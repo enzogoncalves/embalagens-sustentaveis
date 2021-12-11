@@ -1,10 +1,9 @@
 // Adicionar sombra no header quando abaixar um pouco a página
 const header = document.querySelector('#header');
 header.classList.add('background-blur');
-
 const headerHeight = header.offsetHeight;
 function headerShadow() {
-    if(window.scrollY >= 10) {
+    if(window.scrollY >= 4) {
         header.classList.add('header-box-shadow');
     } else {
         header.classList.remove('header-box-shadow');
@@ -36,6 +35,7 @@ const menu = document.querySelector('.menu');
 btnOpenMenu.addEventListener('click', function() {
     menu.classList.add('show');
     btnCloseMenu.classList.add('btn-close-show');
+    header.classList.add('header-disappear');
     header.classList.remove('background-blur');
 });
 
@@ -43,6 +43,7 @@ btnOpenMenu.addEventListener('click', function() {
 btnCloseMenu.addEventListener('click', function() {
     menu.classList.remove('show');
     btnCloseMenu.classList.remove('btn-close-show');
+    header.classList.remove('header-disappear');
     header.classList.add('background-blur');
 });
 
@@ -53,6 +54,8 @@ for (const link of links) {
     link.addEventListener('click', function() {
         menu.classList.remove('show');
         btnCloseMenu.classList.remove('btn-close-show');
+        header.classList.remove('header-disappear');
+        header.classList.add('background-blur');
     });
 }
 
