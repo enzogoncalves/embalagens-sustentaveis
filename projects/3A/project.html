@@ -6,12 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../../assets/favicon/favicon.ico" type="image/x-icon">
     <title>Grupo 03 - A</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Carter+One&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap&family=Patua+One&display=swap"
+        rel="stylesheet"
+    />
+
+    <!-- Favicon -->
+    <link
+        rel="shortcut icon"
+        href="assets/favicon/favicon.ico"
+        type="image/x-icon"
+    />
+
     <!-- Styles -->
-    <link rel="stylesheet" type="text/css" href="../../assets/css/style.css">
-    <link rel="stylesheet" type="text/css" href="../../assets/css/project.css">
-    
+    <link rel="stylesheet" type="text/css" href="../../assets/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="../../assets/css/packings.css"/>
+
     <!-- Icons -->
-    <link rel="stylesheet" href="../../assets/fonts/style.css">
+    <link rel="stylesheet" href="../../assets/fonts/style.css" />
 </head>
 <body>
     <i class="toUpPage icon-chevron-up" title="Ir para o topo da página"></i>
@@ -21,9 +37,9 @@
             <div class="menu">
                 <ul>
                     <li><a href="../../index.html">Home</a></li>
-                    <li><a href="#packing-about">Sobre a Embalagem</a></li>
-                    <li><a href="#packing-materials">Materiais Utilizados</a></li>
-                    <li><a href="#packing-preparation">Modo de preparo</a></li>
+                    <li><a href="#packing-about">Sobre as Embalagem</a></li>
+                    <li><a href="#packing-01">Plástico feito de batatas</a></li>
+                    <li><a href="#packing-02">Embalagem Decorativa</a></li>
                     <li><a href="#finals">Considerações finais</a></li>
                 </ul>
             </div>
@@ -69,24 +85,36 @@
             </div>
         </section>
 
+        <!-- Packings -->
         <div class="packing-flex-box">
-            <!-- Materiais-->
-            
-            <section id="packing-materials-section">
-                <h1 class="title title-padding-top" id="packing-materials">Materiais Utilizados<i class="icon-material"></i></h1>
+            <section class="packing-section">       
+                <h1 class="title title-padding-top" id="packing-01">Plástico feito de batatas</h1>
                 <div class="container">
                     <div class="packing-materials">
-                        <h3 class="packing-name">Plástico feito de batatas</h3>
-                        <ul class="packing-ul-materials-preparation">
+                        <h3 class="packing-name">Materiais Utilizados</h3>
+                        <ul>
                             <li>150ml de água</li>
                             <li>3 colheres de glicerina</li>
                             <li>3 batatas</li>
                             <li>4 colheres de vinagre</li>
                         </ul>
                     </div>
+
+                    <div class="packing-preparation">
+                        <h3 class="packing-name">Modo de Preparo</h3>
+
+                        <p>Disponível neste vídeo:</p>
+                        <iframe src="https://www.youtube.com/embed/k8lg4vBAUSA" class="packing-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <section class="packing-section">       
+                <h1 class="title title-padding-top" id="packing-02">Embalagem decorativa</h1>
+                <div class="container">
                     <div class="packing-materials">
-                        <h3 class="packing-name">Embalagem decorativa</h3>
-                        <ul class="packing-ul-materials-preparation">
+                        <h3 class="packing-name">Materiais Utilizados</h3>
+                        <ul>
                             <li>Pote de requeijão</li>
                             <li>Pote de Yakult</li>
                             <li>Lã amarela e branca</li>
@@ -95,38 +123,27 @@
                             <li>Fitas de cetim vermelhas</li>
                             <li>Gravata: feita de fita cetim</li>
                         </ul>
-                        <img src="img/project-materials-image.png" alt="Imagem dos materiais utilizados na embalagem decorativa" class="materials-packing-image">
+
+                        <img src="img/project-materials-image.png" alt="Imagem dos materiais utilizados na embalagem decorativa" class="packing-image">
                     </div>
-                </div>
-            </section>
-            
-            <!-- Modo de preparo -->
-            
-            <section id="packing-preparation-section">
-                <h1 class="title title-padding-top" id="packing-preparation">Modo de Preparo<i class="icon-tools"></i></h1>
-                <div class="container">
+
                     <div class="packing-preparation">
-                        <h3 class="packing-name">Plástico feito de batatas</h3>
-                        <p class="packing-text">Disponível neste vídeo:</p>
-                        <iframe src="https://www.youtube.com/embed/k8lg4vBAUSA" class="packing-video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                    <div class="packing-preparation">
-                        <h3 class="packing-name">Embalagem decorativa</h3>
-                        <p class="packing-text">Medir a altura do pote e cortar a lã amarela e branca em tiras. Após cortadas, cole-as no pote no formato vertical.</p>
-                        <p class="packing-text">Com as fitas de cetim, cole-as nas partes de cima e de baixo do pote no formato horizontal. Depois cole a gravata na fita de cima.</p>
-                        <img src="img/project-preparation-image-01.png" alt="Imagem do modo de preparo" class="preparation-packing-image">
+                        <h3 class="packing-name">Modo de Preparo</h3>
+
+                        <p>Medir a altura do pote e cortar a lã amarela e branca em tiras. Após cortadas, cole-as no pote no formato vertical.</p>
+                        <p>Com as fitas de cetim, cole-as nas partes de cima e de baixo do pote no formato horizontal. Depois cole a gravata na fita de cima.</p>
+                        <img src="img/project-preparation-image-01.png" alt="Imagem do modo de preparo" class="packing-image">
                         <br><br>
-                        <p class="packing-text">Enrole o pote com a lã colorida.</p>
-                        <img src="img/project-preparation-image-02.png" alt="Imagem do modo de preparo" class="preparation-packing-image">
+                        <p>Enrole o pote com a lã colorida.</p>
+                        <img src="img/project-preparation-image-02.png" alt="Imagem do modo de preparo" class="packing-image">
                         <br><br>
-                        <p class="packing-text">De cabeça para baixo, cole o pote de Yakult no DVD</p>
-                        <img src="img/project-preparation-image-03.png" alt="Imagem do modo de preparo" class="preparation-packing-image">
+                        <p>De cabeça para baixo, cole o pote de Yakult no DVD</p>
+                        <img src="img/project-preparation-image-03.png" alt="Imagem do modo de preparo" class="packing-image">
                     </div>
                 </div>
             </section>
         </div>
 
-        
         <h1 class="title title-padding-top">Considerações finais</h1>
         <section id="finals">
             <div class="container">

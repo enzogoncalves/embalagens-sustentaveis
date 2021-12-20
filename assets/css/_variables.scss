@@ -1,0 +1,26 @@
+// Fonts
+$logo-font: 'Carter One', cursive;
+$title-font: 'Josefin Sans', sans-serif;
+$text-font: 'Open Sans', sans-serif;
+$material-font: 'Patua One', cursive;
+
+// Sizes
+$header-height: 4.375rem;
+
+// Colors
+$main-background-color: rgb(20, 20, 20);
+$p-text-color: white;
+$teacher-href-color: rgb(255, 86, 86);
+$a-hover-effect: rgb(31, 184, 120);
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin white-box($margin-top-bottom, $margin-left-right, $padding-top-bottom, $padding-left-right) {
+    margin: $margin-top-bottom $margin-left-right;
+    border: 3px solid white;
+    padding: $padding-top-bottom $padding-left-right;
+}

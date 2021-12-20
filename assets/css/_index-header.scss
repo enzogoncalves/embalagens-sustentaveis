@@ -1,0 +1,85 @@
+.icon-menu {
+    @include p700 {
+        display: none;
+    }
+}
+
+.logo {
+    @include p700 {
+        max-width: 260px;
+    }
+    
+    @include p1000 {
+        max-width: 500px;
+        font-size: 1.5rem;
+    }
+}
+
+#nav {
+    justify-content: space-around;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+
+    .menu {
+        @include p700 {
+            visibility: visible;
+            opacity: 1;
+            pointer-events: all;
+    
+            height: auto;
+            width: auto;
+        
+            position: static;
+        
+            background-color: transparent;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+        
+            transition: none;
+        }
+        
+        ul {
+            @include p700 {
+                gap: 3rem;
+            }
+
+            li a {
+                @include p700 {
+                    padding: .25rem;
+                    font: 400 1.35rem var(--title-font);
+                }
+
+                @include p1000 {
+                    font-size: 1.5rem;
+                }
+
+                &:hover::before {
+                    @include p700 {
+                        width: 105%;
+                    }
+                }
+            }
+        }
+    }
+
+    .show ul {
+        gap: 10rem;
+    
+        li a {
+            font: 700 3.5rem var(--title-font);
+        
+            @include p300 {
+                font: 700 1.5rem var(--title-font);
+            }
+    
+            @include p300-p400 {
+                font: 700 2rem var(--title-font);
+            }
+    
+            @include p401-p600 {
+                font: 700 2.5rem var(--title-font);
+            }
+        }
+    }
+}

@@ -1,0 +1,38 @@
+.toUpPage {
+    opacity: 0;
+    visibility: hidden;
+
+    position: fixed;
+    bottom: -2rem;
+    right: 2rem;
+    z-index: 10;
+    
+    padding: .3rem;
+    
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 1);
+    
+    color: black;
+    font-size: 2.25rem;
+    border-radius: 50%;
+
+    cursor: pointer;
+    
+    transition-duration: .3s;
+
+    @include p1000 {
+            right: 4rem;
+            padding: .3rem;
+            font-size: 2.5rem;
+    }
+}
+
+body .toUpPage-show {
+    opacity: 1;
+    visibility: visible;
+    bottom: 2.5rem;
+
+    &:hover {
+        background-color: white;
+    }
+}

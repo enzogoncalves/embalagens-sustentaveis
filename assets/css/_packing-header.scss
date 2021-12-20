@@ -1,0 +1,129 @@
+.logo {
+    @include p900 {
+        max-width: 210px;
+        margin-right: 1.9rem;
+        font-size: 1rem;
+    }
+
+    @include p950 {
+        max-width: 270px;
+        font-size: 1.25rem;
+    }
+
+    @include p1100 {
+        margin-right: 2.5rem;
+    }
+}
+
+.icon-menu {
+    @include p900 {
+        display: none;
+    }
+}
+
+#nav {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    @include p601-p899 {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+    @include p900 {
+        padding: 0 2rem;
+    }
+
+    .menu {
+        @include p900 {
+            visibility: visible;
+            opacity: 1;
+            pointer-events: all;
+
+            height: auto;
+            width: auto;
+        
+            position: static;
+        
+            background-color: transparent;
+            backdrop-filter: none;
+            -webkit-backdrop-filter: none;
+        
+            transition: none;
+        }
+
+        ul {
+            @include p900 {
+                gap: 2rem;
+                justify-content: space-between;
+                width: 100%;
+                flex-grow: 2;
+            }
+
+            @include p1100 {
+                justify-content: space-around;
+            }
+
+            li {
+                @include p900 {
+                    max-width: 150px;
+        
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                @include p1100 {
+                    max-width: 400px;
+                }
+
+                &:first-child {
+                    @include p900 {
+                        padding-right: 1.5rem;
+                    }
+                }
+
+                a {
+                    @include p900 {
+                        font: 400 1rem $title-font;
+                        text-align: center;
+
+                    }
+
+                    @include p1100 {
+                        font-size: 1.25rem;
+                    }
+
+                    &:hover::before {
+                        @include p900 {
+                            width: 105%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .show ul {
+        gap: 5.5rem;
+
+        li {
+            a{
+                font: 700 1.25rem $title-font;
+
+                @include p300 {
+                    font-size: 1rem;
+                }
+
+                @include p500 {
+                    font: 700 1.75rem $title-font;
+                }
+
+                @include p700 {
+                    font: 700 2.5rem $title-font;
+                }
+            }
+        }
+    }
+}

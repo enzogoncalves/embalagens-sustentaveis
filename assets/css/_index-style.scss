@@ -1,0 +1,71 @@
+/* Header */
+a.teacher-href {
+    color: $teacher-href-color;
+    word-break: break-all;
+    text-decoration: underline;
+
+    &:hover {
+        color: darken($teacher-href-color, 7);
+    }
+}
+
+.project-about {
+    @include white-box(1.5rem, 1.5rem, 0, 0);
+
+    p {
+        padding: .5rem;
+    }
+
+    img {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        padding: .5rem;
+
+        @include p590 {
+            width: 50%;
+    
+            max-height: auto;
+        }
+    }
+    
+    .img-about-01 {
+        @include p590 {
+            float: left;
+            min-width: 275px;
+            max-width: 350px;
+            padding-right: 1rem;
+        }
+    }
+
+    .img-about-02 {
+        @include p590 {
+            float: right;
+            max-width: 275px;
+            padding-left: 1rem;
+        }
+    }
+
+    @include p300 {
+        margin-left: .75rem;
+        margin-right: .75rem;
+    }
+
+    @include p300-p400 {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    @include p590 {
+        overflow: hidden;
+        max-width: 800px;          
+    }
+}
+
+
+@include p900 {
+    .container {
+        max-width: 840px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,98 @@
+@media (min-width: 601px) and (max-width: 899px){
+    #nav {
+        justify-content: space-around;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 700px) {
+    #nav .show ul li a{
+        font: 700 2.5rem var(--title-font);
+    }
+}
+
+@media (min-width: 900px) {
+    .icon-menu {
+        display: none;
+    }
+
+    .logo {
+        max-width: 260px;
+        margin-right: 1.9rem;
+    }
+
+    #nav .menu {
+        visibility: visible;
+        opacity: 1;
+        pointer-events: all;
+
+        height: auto;
+        width: auto;
+    
+        position: static;
+    
+        background-color: transparent;
+        backdrop-filter: none;
+        -webkit-backdrop-filter: none;
+    
+        transition: none;
+    }
+
+    #nav {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        justify-content: space-around;
+    }
+
+    .menu 
+
+    .menu ul li {
+        max-width: 150px;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .menu ul li:first-child {
+        padding-right: 1.5rem;
+    }@
+
+    .menu ul li a {
+        padding: .25rem;
+        font: 400 1rem var(--title-font);
+        text-align: center;
+    }
+
+    .menu ul li a::before {
+        left: -2.5%v!important;
+        height: 2px;
+    }
+
+    .menu ul li a:hover::before {
+        width: 105%;
+    }
+}
+
+@media (min-width: 1100px) {
+    .logo {
+        margin-right: 2.5rem;
+    }
+
+    #nav {
+        justify-content: space-around;
+    }
+
+    .menu ul {
+        justify-content: space-around;
+    }
+
+    .menu ul li {
+        max-width: 400px;
+    }
+
+    .menu ul li a {
+        font-size: 1.25rem;
+    }
+}

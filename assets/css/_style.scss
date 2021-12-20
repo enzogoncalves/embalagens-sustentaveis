@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+:root {
+    /* fonts */
+    --logo-font: 'Carter One', cursive;
+    --title-font: 'Josefin Sans', sans-serif;
+    --text-font: 'Open Sans', sans-serif;
+    
+    --header-height: 4.375rem;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: sans-serif;
+    position: relative; 
+}
+
+main {
+    background-color: $main-background-color;
+    padding-bottom: 2rem;
+}
+
+.container {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}   
+
+p {
+    font: 400 1rem $text-font;
+    color: $p-text-color;
+    text-indent: 1rem;
+    line-height: 1.4rem;
+}
+
+ul {
+    list-style: none;
+}
+
+.title {
+    max-width: 400px;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    padding-top: 1rem;
+    color: white;
+    font: 600 1.6rem $title-font;
+    text-align: center;
+    
+    
+    &::before {
+        content: '';
+        position: absolute;
+        left: -8px;
+        bottom: 0;
+        width: calc(100% + 16px);
+        height: 2px;
+        background-color: rgb(31, 175, 168);
+    }
+
+    @include p330 {
+        font-size: 1.25rem;
+    }
+
+    @include p500 {
+        font-size: 2rem;
+    }
+}
+
+.title-padding-top {
+    padding-top: 5rem;
+}
+
+.project-about-section {
+    padding-top: $header-height;
+
+    .container {
+        background-color: rgba(79, 17, 192, 0.3);
+        box-shadow: 0 0 .5rem 2px rgba(255, 255, 255, 0.5);
+        border-radius: 0 0 .5rem .5rem;
+        padding-bottom: .01rem;
+    }
+}

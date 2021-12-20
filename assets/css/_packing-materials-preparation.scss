@@ -1,0 +1,94 @@
+.icon-material, .icon-tools {
+    color: white;
+    font-weight: 400;
+    margin-right: 1rem;
+}
+
+.packing-section {
+    margin: 0 1.5rem;
+}
+
+.packing-flex-box {
+    @include p1050 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+
+    .container {
+        max-width: 392px;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0 auto;
+        padding: 1rem;
+        background-color: rgba(32, 187, 192, 0.3);
+        color: white; 
+        outline: 2px dotted rgb(255, 255, 255);
+        border-radius: .5rem;
+        
+        .packing-materials, .packing-preparation {
+            width: 100%;
+            max-width: 360px;
+            margin: 0 auto;            
+            padding-bottom: .5rem;
+            border-radius: .5rem;
+            overflow: hidden;
+            
+            .packing-name {
+                font-family: $material-font;
+            }
+
+            // @include p500 {
+            //     padding-bottom: 1.5rem;
+            // }            
+        
+            ul {
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                padding: .5rem .5rem .5rem 1.5rem;
+                color: white;
+                font-weight: 600;
+                list-style: circle;
+            }
+        }
+    }
+
+    p {
+        font: 400 1rem var(--text-font);
+        padding: .5rem;
+        line-height: 1.4rem;
+    }
+}
+
+.packing-image {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.packing-video {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    max-width: 350px;
+    display: block;
+    margin: 0 auto;
+    padding-bottom: .25rem;
+}
+
+/* ==== MATERIALS ====*/
+.packing-materials {
+    border: 2px solid rgb(28, 175, 155);
+}
+
+/* ==== PREPARATION ====*/
+.packing-preparation {
+    border: 2px solid rgb(16, 133, 201);
+}

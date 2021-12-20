@@ -1,0 +1,19 @@
+#finals .container{
+    @include p601 {
+        margin: 0 auto;
+    }
+    
+    max-width: 550px;
+    border: 2px solid white;
+    border-radius: .5rem;
+    padding: 0 1rem;
+
+    p {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    strong {
+        color: rgb(0, 128, 11);
+    }
+} 
