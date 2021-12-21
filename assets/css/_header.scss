@@ -24,6 +24,8 @@ body {
     }
 }
 
+
+
 .logo {
     color: white;
 
@@ -157,7 +159,7 @@ body {
 
 
 /* Menu Show */
-#nav .show {
+.show {
     visibility: visible;
     opacity: 1;
     pointer-events: all;
@@ -191,21 +193,30 @@ body {
                         height: 3px;
                     }
                 }
-
-                &:hover::before {
-                    width: 110%;
-                    background-color: $a-hover-effect;
-
-                }
             }
         }   
     }
 }
 
 // Mozilla
-@-moz-document url-prefix {
+@-moz-document url-prefix() {
+    body .background-blur {
+        background-color: rgba(30, 9, 70, 0.9);
+    }
+
+    #nav .show ul li a {
+        &:hover {
+            color: $mozilla-a-hover-effect;
+        }
+
+        &:hover::before {
+            background-color: $mozilla-a-hover-effect;
+        }
+    }
+    
+
     .show {
         background-color: none;
-        background-image: linear-gradient(45deg, rgba(36, 128, 0, 0.8), rgba(24, 148, 111, 0.8), rgba(132, 0, 255, 0.8));
+        background-image: linear-gradient(180deg, rgba(0, 80, 53, 0.9), rgba(13, 61, 105, 0.9), rgba(44, 0, 145, 0.9));
     }
 }

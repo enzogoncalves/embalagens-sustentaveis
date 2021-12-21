@@ -308,7 +308,7 @@ body .header-disappear {
 }
 
 /* Menu Show */
-#nav .show {
+.show {
   visibility: visible;
   opacity: 1;
   pointer-events: all;
@@ -324,49 +324,53 @@ body .header-disappear {
           justify-content: center;
 }
 
-#nav .show ul {
+.show ul {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-#nav .show ul li {
+.show ul li {
   text-align: center;
 }
 
-#nav .show ul li a {
+.show ul li a {
   text-decoration: none;
   text-shadow: 3px 3px 1px black;
   padding: .25rem;
 }
 
-#nav .show ul li a::before {
+.show ul li a::before {
   width: 25px;
   height: 4px;
 }
 
 @media (max-width: 300px) {
-  #nav .show ul li a::before {
+  .show ul li a::before {
     height: 2px;
   }
 }
 
 @media (min-width: 300px) and (max-width: 400px) {
-  #nav .show ul li a::before {
+  .show ul li a::before {
     height: 3px;
   }
 }
 
-#nav .show ul li a:hover::before {
-  width: 110%;
-  background-color: #1fb878;
-}
-
-@-moz-document url-prefix {
+@-moz-document url-prefix() {
+  body .background-blur {
+    background-color: rgba(30, 9, 70, 0.9);
+  }
+  #nav .show ul li a:hover {
+    color: #c2e12d;
+  }
+  #nav .show ul li a:hover::before {
+    background-color: #c2e12d;
+  }
   .show {
     background-color: none;
-    background-image: linear-gradient(45deg, rgba(36, 128, 0, 0.8), rgba(24, 148, 111, 0.8), rgba(132, 0, 255, 0.8));
+    background-image: linear-gradient(180deg, rgba(0, 80, 53, 0.9), rgba(13, 61, 105, 0.9), rgba(44, 0, 145, 0.9));
   }
 }
 
