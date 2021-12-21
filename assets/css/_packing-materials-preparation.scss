@@ -6,6 +6,10 @@
 
 .packing-section {
     margin: 0 1.5rem;
+
+    .title {
+        max-width: 392px;
+    }
 }
 
 .packing-flex-box {
@@ -57,7 +61,7 @@
     }
 
     p {
-        font: 400 1rem var(--text-font);
+        font: 400 1rem $text-font;
         padding: .5rem;
         line-height: 1.4rem;
     }

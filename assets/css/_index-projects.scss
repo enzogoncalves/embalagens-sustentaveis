@@ -70,7 +70,7 @@
     }
 
     .project-front-name {
-        font: 500 1.5rem var(--title-font);
+        font: 500 1.5rem $title-font;
         color: white;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
         padding-top: .25rem;

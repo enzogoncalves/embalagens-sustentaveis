@@ -47,7 +47,7 @@
             li a {
                 @include p700 {
                     padding: .25rem;
-                    font: 400 1.35rem var(--title-font);
+                    font: 400 1.35rem $title-font;
                 }
 
                 @include p1000 {
@@ -67,18 +67,18 @@
         gap: 10rem;
     
         li a {
-            font: 700 3.5rem var(--title-font);
+            font: 700 3.5rem $title-font;
         
             @include p300 {
-                font: 700 1.5rem var(--title-font);
+                font: 700 1.5rem $title-font;
             }
     
             @include p300-p400 {
-                font: 700 2rem var(--title-font);
+                font: 700 2rem $title-font;
             }
     
             @include p401-p600 {
-                font: 700 2.5rem var(--title-font);
+                font: 700 2.5rem $title-font;
             }
         }
     }

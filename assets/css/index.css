@@ -142,7 +142,7 @@ a.teacher-href:hover {
 @media (min-width: 700px) {
   #nav .menu ul li a {
     padding: .25rem;
-    font: 400 1.35rem var(--title-font);
+    font: 400 1.35rem "Josefin Sans", sans-serif;
   }
 }
 
@@ -163,24 +163,24 @@ a.teacher-href:hover {
 }
 
 #nav .show ul li a {
-  font: 700 3.5rem var(--title-font);
+  font: 700 3.5rem "Josefin Sans", sans-serif;
 }
 
 @media (max-width: 300px) {
   #nav .show ul li a {
-    font: 700 1.5rem var(--title-font);
+    font: 700 1.5rem "Josefin Sans", sans-serif;
   }
 }
 
 @media (min-width: 300px) and (max-width: 400px) {
   #nav .show ul li a {
-    font: 700 2rem var(--title-font);
+    font: 700 2rem "Josefin Sans", sans-serif;
   }
 }
 
 @media (min-width: 401px) and (max-width: 600px) {
   #nav .show ul li a {
-    font: 700 2.5rem var(--title-font);
+    font: 700 2.5rem "Josefin Sans", sans-serif;
   }
 }
 
@@ -272,7 +272,7 @@ a.teacher-href:hover {
 }
 
 #projects .project-front-name {
-  font: 500 1.5rem var(--title-font);
+  font: 500 1.5rem "Josefin Sans", sans-serif;
   color: white;
   text-shadow: 1px 1px 1px black;
   padding-top: .25rem;

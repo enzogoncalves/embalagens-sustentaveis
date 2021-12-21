@@ -281,6 +281,10 @@
   margin: 0 1.5rem;
 }
 
+.packing-section .title {
+  max-width: 392px;
+}
+
 @media (min-width: 1050px) {
   .packing-flex-box {
     display: -webkit-box;
@@ -343,7 +347,7 @@
 }
 
 .packing-flex-box p {
-  font: 400 1rem var(--text-font);
+  font: 400 1rem "Open Sans", sans-serif;
   padding: .5rem;
   line-height: 1.4rem;
 }

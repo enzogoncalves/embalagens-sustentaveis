@@ -56,7 +56,9 @@ ul {
 }
 
 .title {
-  max-width: 400px;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
   position: relative;
   margin: 0 auto;
   margin-bottom: 1rem;
@@ -142,7 +144,7 @@ body .toUpPage-show:hover {
 }
 
 #header {
-  height: var(--header-height);
+  height: 4.375rem;
   width: 100%;
   position: fixed;
   top: 0;
@@ -167,7 +169,7 @@ body .header-disappear {
 
 .logo {
   color: white;
-  font: 400 1.25rem var(--logo-font);
+  font: 400 1.25rem "Open Sans", sans-serif;
   line-height: 2rem;
   text-shadow: 2px 2px 2px black;
   word-spacing: .5rem;
@@ -202,7 +204,7 @@ body .header-disappear {
 }
 
 #nav {
-  height: var(--header-height);
+  height: 4.375rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -393,7 +395,7 @@ body .header-disappear {
 }
 
 #footer h1 {
-  font: 400 1.25rem var(--title-font);
+  font: 400 1.25rem "Josefin Sans", sans-serif;
 }
 
 #footer p {

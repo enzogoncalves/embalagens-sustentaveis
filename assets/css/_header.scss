@@ -1,5 +1,5 @@
 #header {
-    height: var(--header-height);
+    height: $header-height;
     width: 100%;
 
     position: fixed;
@@ -27,7 +27,7 @@ body {
 .logo {
     color: white;
 
-    font: 400 1.25rem var(--logo-font);
+    font: 400 1.25rem $text-font;
     line-height: 2rem;
     text-shadow: 2px 2px 2px black;
     word-spacing: .5rem;
@@ -54,7 +54,7 @@ body {
 }
 
 #nav {
-    height: var(--header-height);
+    height: $header-height;
 
     display: flex;
     align-items: center;
